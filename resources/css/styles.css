@@ -1,7 +1,4 @@
 /* ===== =====  GLOBAL STYLING  ===== ===== */
-/* html {
-    box-sizing: border-box;
-} */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +21,6 @@ html {
 }
 /* ===== ===== REUSALBE STYLING  ===== ===== */
 .row {
-    /* outline: 1px solid black; */
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -83,8 +79,34 @@ h3 {
     color: #e67e22;
     margin-bottom: 10px; 
 }
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /* sectrects to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
 
+/* ===== =====  LINKS  ===== ===== */
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2;
+}
 
+a:hover, 
+a:active {
+    color: gray;
+    border-bottom: 1px solid transparent;
+}
 /* =====  BUTTONS  ===== */
 .btn:link,
 .btn:visited {
@@ -237,8 +259,22 @@ header {
     font-size: 150%;
     margin-right: 25px;
 }
+.btn-app:link, 
+.btn-app:visited {
+    border: 0;
+}
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/* ===== =====  CITIES  ===== ===== */
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature {
+    margin-bottom: 5px;
 }
